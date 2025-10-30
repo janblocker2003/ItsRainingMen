@@ -1,6 +1,6 @@
 import pygame, simpleGE, random
 
-""" it's raining men 1-3 steps
+""" it's raining men 1-6 steps
     Build your roster!
 """
 
@@ -8,7 +8,7 @@ class Men(simpleGE.Sprite):
     def __init__(self, scene):
         super().__init__(scene)
         self.setImage("Men.png")
-        self.setSize(25, 25)
+        self.setSize(25, 35)
         self.reset()
         
     def reset(self):
@@ -24,7 +24,7 @@ class Guy(simpleGE.Sprite):
     def __init__(self, scene):
         super().__init__(scene)
         self.setImage("Guy.gif")
-        self.setSize(50, 50)
+        self.setSize(35, 45)
         self.position = (320, 400)
         self.moveSpeed = 5
     
